@@ -1,0 +1,3 @@
+C:/Work/03_University/HAPP/build/CMakeFiles/happ.dir
+C:/Work/03_University/HAPP/build/CMakeFiles/edit_cache.dir
+C:/Work/03_University/HAPP/build/CMakeFiles/rebuild_cache.dir
