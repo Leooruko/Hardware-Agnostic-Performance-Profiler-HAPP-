@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj.d"
   "CMakeFiles/happ.dir/src/main.cpp.obj"
   "CMakeFiles/happ.dir/src/main.cpp.obj.d"
+  "CMakeFiles/happ.dir/src/virtual_memory.cpp.obj"
+  "CMakeFiles/happ.dir/src/virtual_memory.cpp.obj.d"
   "happ.exe"
   "happ.exe.manifest"
   "happ.pdb"

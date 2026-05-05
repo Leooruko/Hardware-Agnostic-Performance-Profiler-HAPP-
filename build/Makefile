@@ -200,6 +200,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/virtual_memory.obj: src/virtual_memory.cpp.obj
+.PHONY : src/virtual_memory.obj
+
+# target to build an object file
+src/virtual_memory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/virtual_memory.cpp.obj
+.PHONY : src/virtual_memory.cpp.obj
+
+src/virtual_memory.i: src/virtual_memory.cpp.i
+.PHONY : src/virtual_memory.i
+
+# target to preprocess a source file
+src/virtual_memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/virtual_memory.cpp.i
+.PHONY : src/virtual_memory.cpp.i
+
+src/virtual_memory.s: src/virtual_memory.cpp.s
+.PHONY : src/virtual_memory.s
+
+# target to generate assembly for a file
+src/virtual_memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/virtual_memory.cpp.s
+.PHONY : src/virtual_memory.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/virtual_memory.obj
+	@echo ... src/virtual_memory.i
+	@echo ... src/virtual_memory.s
 .PHONY : help
 
 

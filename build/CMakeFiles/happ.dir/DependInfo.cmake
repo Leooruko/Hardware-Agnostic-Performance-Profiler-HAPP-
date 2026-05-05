@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Work/03_University/HAPP/src/hardware_profile.cpp" "CMakeFiles/happ.dir/src/hardware_profile.cpp.obj" "gcc" "CMakeFiles/happ.dir/src/hardware_profile.cpp.obj.d"
   "C:/Work/03_University/HAPP/src/hardware_profiles.cpp" "CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj" "gcc" "CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj.d"
   "C:/Work/03_University/HAPP/src/main.cpp" "CMakeFiles/happ.dir/src/main.cpp.obj" "gcc" "CMakeFiles/happ.dir/src/main.cpp.obj.d"
+  "C:/Work/03_University/HAPP/src/virtual_memory.cpp" "CMakeFiles/happ.dir/src/virtual_memory.cpp.obj" "gcc" "CMakeFiles/happ.dir/src/virtual_memory.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
