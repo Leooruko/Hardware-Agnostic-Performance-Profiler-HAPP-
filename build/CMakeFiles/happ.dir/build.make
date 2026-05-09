@@ -86,70 +86,189 @@ CMakeFiles/happ.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/main.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\main.cpp -o CMakeFiles\happ.dir\src\main.cpp.s
 
-CMakeFiles/happ.dir/src/hardware_profile.cpp.obj: CMakeFiles/happ.dir/flags.make
-CMakeFiles/happ.dir/src/hardware_profile.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
-CMakeFiles/happ.dir/src/hardware_profile.cpp.obj: C:/Work/03_University/HAPP/src/hardware_profile.cpp
-CMakeFiles/happ.dir/src/hardware_profile.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/happ.dir/src/hardware_profile.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/hardware_profile.cpp.obj -MF CMakeFiles\happ.dir\src\hardware_profile.cpp.obj.d -o CMakeFiles\happ.dir\src\hardware_profile.cpp.obj -c C:\Work\03_University\HAPP\src\hardware_profile.cpp
+CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj: C:/Work/03_University/HAPP/src/hardware/storage_type.cpp
+CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj -MF CMakeFiles\happ.dir\src\hardware\storage_type.cpp.obj.d -o CMakeFiles\happ.dir\src\hardware\storage_type.cpp.obj -c C:\Work\03_University\HAPP\src\hardware\storage_type.cpp
 
-CMakeFiles/happ.dir/src/hardware_profile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/hardware_profile.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\hardware_profile.cpp > CMakeFiles\happ.dir\src\hardware_profile.cpp.i
+CMakeFiles/happ.dir/src/hardware/storage_type.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/hardware/storage_type.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\hardware\storage_type.cpp > CMakeFiles\happ.dir\src\hardware\storage_type.cpp.i
 
-CMakeFiles/happ.dir/src/hardware_profile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/hardware_profile.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\hardware_profile.cpp -o CMakeFiles\happ.dir\src\hardware_profile.cpp.s
+CMakeFiles/happ.dir/src/hardware/storage_type.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/hardware/storage_type.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\hardware\storage_type.cpp -o CMakeFiles\happ.dir\src\hardware\storage_type.cpp.s
 
-CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj: CMakeFiles/happ.dir/flags.make
-CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
-CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj: C:/Work/03_University/HAPP/src/hardware_profiles.cpp
-CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj -MF CMakeFiles\happ.dir\src\hardware_profiles.cpp.obj.d -o CMakeFiles\happ.dir\src\hardware_profiles.cpp.obj -c C:\Work\03_University\HAPP\src\hardware_profiles.cpp
+CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj: C:/Work/03_University/HAPP/src/hardware/hardware_config.cpp
+CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj -MF CMakeFiles\happ.dir\src\hardware\hardware_config.cpp.obj.d -o CMakeFiles\happ.dir\src\hardware\hardware_config.cpp.obj -c C:\Work\03_University\HAPP\src\hardware\hardware_config.cpp
 
-CMakeFiles/happ.dir/src/hardware_profiles.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/hardware_profiles.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\hardware_profiles.cpp > CMakeFiles\happ.dir\src\hardware_profiles.cpp.i
+CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\hardware\hardware_config.cpp > CMakeFiles\happ.dir\src\hardware\hardware_config.cpp.i
 
-CMakeFiles/happ.dir/src/hardware_profiles.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/hardware_profiles.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\hardware_profiles.cpp -o CMakeFiles\happ.dir\src\hardware_profiles.cpp.s
+CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\hardware\hardware_config.cpp -o CMakeFiles\happ.dir\src\hardware\hardware_config.cpp.s
 
-CMakeFiles/happ.dir/src/virtual_memory.cpp.obj: CMakeFiles/happ.dir/flags.make
-CMakeFiles/happ.dir/src/virtual_memory.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
-CMakeFiles/happ.dir/src/virtual_memory.cpp.obj: C:/Work/03_University/HAPP/src/virtual_memory.cpp
-CMakeFiles/happ.dir/src/virtual_memory.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/happ.dir/src/virtual_memory.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/virtual_memory.cpp.obj -MF CMakeFiles\happ.dir\src\virtual_memory.cpp.obj.d -o CMakeFiles\happ.dir\src\virtual_memory.cpp.obj -c C:\Work\03_University\HAPP\src\virtual_memory.cpp
+CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj: C:/Work/03_University/HAPP/src/workload/workload_spec.cpp
+CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj -MF CMakeFiles\happ.dir\src\workload\workload_spec.cpp.obj.d -o CMakeFiles\happ.dir\src\workload\workload_spec.cpp.obj -c C:\Work\03_University\HAPP\src\workload\workload_spec.cpp
 
-CMakeFiles/happ.dir/src/virtual_memory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/virtual_memory.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\virtual_memory.cpp > CMakeFiles\happ.dir\src\virtual_memory.cpp.i
+CMakeFiles/happ.dir/src/workload/workload_spec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/workload/workload_spec.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\workload\workload_spec.cpp > CMakeFiles\happ.dir\src\workload\workload_spec.cpp.i
 
-CMakeFiles/happ.dir/src/virtual_memory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/virtual_memory.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\virtual_memory.cpp -o CMakeFiles\happ.dir\src\virtual_memory.cpp.s
+CMakeFiles/happ.dir/src/workload/workload_spec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/workload/workload_spec.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\workload\workload_spec.cpp -o CMakeFiles\happ.dir\src\workload\workload_spec.cpp.s
+
+CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj: C:/Work/03_University/HAPP/src/simulator/simulation_engine.cpp
+CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj -MF CMakeFiles\happ.dir\src\simulator\simulation_engine.cpp.obj.d -o CMakeFiles\happ.dir\src\simulator\simulation_engine.cpp.obj -c C:\Work\03_University\HAPP\src\simulator\simulation_engine.cpp
+
+CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\simulator\simulation_engine.cpp > CMakeFiles\happ.dir\src\simulator\simulation_engine.cpp.i
+
+CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\simulator\simulation_engine.cpp -o CMakeFiles\happ.dir\src\simulator\simulation_engine.cpp.s
+
+CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj: C:/Work/03_University/HAPP/src/simulator/simulation_result.cpp
+CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj -MF CMakeFiles\happ.dir\src\simulator\simulation_result.cpp.obj.d -o CMakeFiles\happ.dir\src\simulator\simulation_result.cpp.obj -c C:\Work\03_University\HAPP\src\simulator\simulation_result.cpp
+
+CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\simulator\simulation_result.cpp > CMakeFiles\happ.dir\src\simulator\simulation_result.cpp.i
+
+CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\simulator\simulation_result.cpp -o CMakeFiles\happ.dir\src\simulator\simulation_result.cpp.s
+
+CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj: C:/Work/03_University/HAPP/src/profiler/bottleneck_analyzer.cpp
+CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj -MF CMakeFiles\happ.dir\src\profiler\bottleneck_analyzer.cpp.obj.d -o CMakeFiles\happ.dir\src\profiler\bottleneck_analyzer.cpp.obj -c C:\Work\03_University\HAPP\src\profiler\bottleneck_analyzer.cpp
+
+CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\profiler\bottleneck_analyzer.cpp > CMakeFiles\happ.dir\src\profiler\bottleneck_analyzer.cpp.i
+
+CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\profiler\bottleneck_analyzer.cpp -o CMakeFiles\happ.dir\src\profiler\bottleneck_analyzer.cpp.s
+
+CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj: C:/Work/03_University/HAPP/src/cli/cli_parser.cpp
+CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj -MF CMakeFiles\happ.dir\src\cli\cli_parser.cpp.obj.d -o CMakeFiles\happ.dir\src\cli\cli_parser.cpp.obj -c C:\Work\03_University\HAPP\src\cli\cli_parser.cpp
+
+CMakeFiles/happ.dir/src/cli/cli_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/cli/cli_parser.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\cli\cli_parser.cpp > CMakeFiles\happ.dir\src\cli\cli_parser.cpp.i
+
+CMakeFiles/happ.dir/src/cli/cli_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/cli/cli_parser.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\cli\cli_parser.cpp -o CMakeFiles\happ.dir\src\cli\cli_parser.cpp.s
+
+CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj: C:/Work/03_University/HAPP/src/cli/cli_runner.cpp
+CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj -MF CMakeFiles\happ.dir\src\cli\cli_runner.cpp.obj.d -o CMakeFiles\happ.dir\src\cli\cli_runner.cpp.obj -c C:\Work\03_University\HAPP\src\cli\cli_runner.cpp
+
+CMakeFiles/happ.dir/src/cli/cli_runner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/cli/cli_runner.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\cli\cli_runner.cpp > CMakeFiles\happ.dir\src\cli\cli_runner.cpp.i
+
+CMakeFiles/happ.dir/src/cli/cli_runner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/cli/cli_runner.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\cli\cli_runner.cpp -o CMakeFiles\happ.dir\src\cli\cli_runner.cpp.s
+
+CMakeFiles/happ.dir/src/utils/config_file.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/utils/config_file.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/utils/config_file.cpp.obj: C:/Work/03_University/HAPP/src/utils/config_file.cpp
+CMakeFiles/happ.dir/src/utils/config_file.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/happ.dir/src/utils/config_file.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/utils/config_file.cpp.obj -MF CMakeFiles\happ.dir\src\utils\config_file.cpp.obj.d -o CMakeFiles\happ.dir\src\utils\config_file.cpp.obj -c C:\Work\03_University\HAPP\src\utils\config_file.cpp
+
+CMakeFiles/happ.dir/src/utils/config_file.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/utils/config_file.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\utils\config_file.cpp > CMakeFiles\happ.dir\src\utils\config_file.cpp.i
+
+CMakeFiles/happ.dir/src/utils/config_file.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/utils/config_file.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\utils\config_file.cpp -o CMakeFiles\happ.dir\src\utils\config_file.cpp.s
+
+CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj: CMakeFiles/happ.dir/flags.make
+CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj: CMakeFiles/happ.dir/includes_CXX.rsp
+CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj: C:/Work/03_University/HAPP/src/utils/virtual_memory.cpp
+CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj: CMakeFiles/happ.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj -MF CMakeFiles\happ.dir\src\utils\virtual_memory.cpp.obj.d -o CMakeFiles\happ.dir\src\utils\virtual_memory.cpp.obj -c C:\Work\03_University\HAPP\src\utils\virtual_memory.cpp
+
+CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Work\03_University\HAPP\src\utils\virtual_memory.cpp > CMakeFiles\happ.dir\src\utils\virtual_memory.cpp.i
+
+CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Work\03_University\HAPP\src\utils\virtual_memory.cpp -o CMakeFiles\happ.dir\src\utils\virtual_memory.cpp.s
 
 # Object files for target happ
 happ_OBJECTS = \
 "CMakeFiles/happ.dir/src/main.cpp.obj" \
-"CMakeFiles/happ.dir/src/hardware_profile.cpp.obj" \
-"CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj" \
-"CMakeFiles/happ.dir/src/virtual_memory.cpp.obj"
+"CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj" \
+"CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj" \
+"CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj" \
+"CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj" \
+"CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj" \
+"CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj" \
+"CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj" \
+"CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj" \
+"CMakeFiles/happ.dir/src/utils/config_file.cpp.obj" \
+"CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj"
 
 # External object files for target happ
 happ_EXTERNAL_OBJECTS =
 
 happ.exe: CMakeFiles/happ.dir/src/main.cpp.obj
-happ.exe: CMakeFiles/happ.dir/src/hardware_profile.cpp.obj
-happ.exe: CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj
-happ.exe: CMakeFiles/happ.dir/src/virtual_memory.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/utils/config_file.cpp.obj
+happ.exe: CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj
 happ.exe: CMakeFiles/happ.dir/build.make
 happ.exe: CMakeFiles/happ.dir/linkLibs.rsp
 happ.exe: CMakeFiles/happ.dir/objects1.rsp
 happ.exe: CMakeFiles/happ.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable happ.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Work\03_University\HAPP\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable happ.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\happ.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

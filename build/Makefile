@@ -128,53 +128,101 @@ happ/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/build
 .PHONY : happ/fast
 
-src/hardware_profile.obj: src/hardware_profile.cpp.obj
-.PHONY : src/hardware_profile.obj
+src/cli/cli_parser.obj: src/cli/cli_parser.cpp.obj
+.PHONY : src/cli/cli_parser.obj
 
 # target to build an object file
-src/hardware_profile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware_profile.cpp.obj
-.PHONY : src/hardware_profile.cpp.obj
+src/cli/cli_parser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj
+.PHONY : src/cli/cli_parser.cpp.obj
 
-src/hardware_profile.i: src/hardware_profile.cpp.i
-.PHONY : src/hardware_profile.i
+src/cli/cli_parser.i: src/cli/cli_parser.cpp.i
+.PHONY : src/cli/cli_parser.i
 
 # target to preprocess a source file
-src/hardware_profile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware_profile.cpp.i
-.PHONY : src/hardware_profile.cpp.i
+src/cli/cli_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/cli_parser.cpp.i
+.PHONY : src/cli/cli_parser.cpp.i
 
-src/hardware_profile.s: src/hardware_profile.cpp.s
-.PHONY : src/hardware_profile.s
+src/cli/cli_parser.s: src/cli/cli_parser.cpp.s
+.PHONY : src/cli/cli_parser.s
 
 # target to generate assembly for a file
-src/hardware_profile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware_profile.cpp.s
-.PHONY : src/hardware_profile.cpp.s
+src/cli/cli_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/cli_parser.cpp.s
+.PHONY : src/cli/cli_parser.cpp.s
 
-src/hardware_profiles.obj: src/hardware_profiles.cpp.obj
-.PHONY : src/hardware_profiles.obj
+src/cli/cli_runner.obj: src/cli/cli_runner.cpp.obj
+.PHONY : src/cli/cli_runner.obj
 
 # target to build an object file
-src/hardware_profiles.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware_profiles.cpp.obj
-.PHONY : src/hardware_profiles.cpp.obj
+src/cli/cli_runner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj
+.PHONY : src/cli/cli_runner.cpp.obj
 
-src/hardware_profiles.i: src/hardware_profiles.cpp.i
-.PHONY : src/hardware_profiles.i
+src/cli/cli_runner.i: src/cli/cli_runner.cpp.i
+.PHONY : src/cli/cli_runner.i
 
 # target to preprocess a source file
-src/hardware_profiles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware_profiles.cpp.i
-.PHONY : src/hardware_profiles.cpp.i
+src/cli/cli_runner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/cli_runner.cpp.i
+.PHONY : src/cli/cli_runner.cpp.i
 
-src/hardware_profiles.s: src/hardware_profiles.cpp.s
-.PHONY : src/hardware_profiles.s
+src/cli/cli_runner.s: src/cli/cli_runner.cpp.s
+.PHONY : src/cli/cli_runner.s
 
 # target to generate assembly for a file
-src/hardware_profiles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware_profiles.cpp.s
-.PHONY : src/hardware_profiles.cpp.s
+src/cli/cli_runner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/cli_runner.cpp.s
+.PHONY : src/cli/cli_runner.cpp.s
+
+src/hardware/hardware_config.obj: src/hardware/hardware_config.cpp.obj
+.PHONY : src/hardware/hardware_config.obj
+
+# target to build an object file
+src/hardware/hardware_config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj
+.PHONY : src/hardware/hardware_config.cpp.obj
+
+src/hardware/hardware_config.i: src/hardware/hardware_config.cpp.i
+.PHONY : src/hardware/hardware_config.i
+
+# target to preprocess a source file
+src/hardware/hardware_config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.i
+.PHONY : src/hardware/hardware_config.cpp.i
+
+src/hardware/hardware_config.s: src/hardware/hardware_config.cpp.s
+.PHONY : src/hardware/hardware_config.s
+
+# target to generate assembly for a file
+src/hardware/hardware_config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.s
+.PHONY : src/hardware/hardware_config.cpp.s
+
+src/hardware/storage_type.obj: src/hardware/storage_type.cpp.obj
+.PHONY : src/hardware/storage_type.obj
+
+# target to build an object file
+src/hardware/storage_type.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj
+.PHONY : src/hardware/storage_type.cpp.obj
+
+src/hardware/storage_type.i: src/hardware/storage_type.cpp.i
+.PHONY : src/hardware/storage_type.i
+
+# target to preprocess a source file
+src/hardware/storage_type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware/storage_type.cpp.i
+.PHONY : src/hardware/storage_type.cpp.i
+
+src/hardware/storage_type.s: src/hardware/storage_type.cpp.s
+.PHONY : src/hardware/storage_type.s
+
+# target to generate assembly for a file
+src/hardware/storage_type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/hardware/storage_type.cpp.s
+.PHONY : src/hardware/storage_type.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -200,29 +248,149 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/virtual_memory.obj: src/virtual_memory.cpp.obj
-.PHONY : src/virtual_memory.obj
+src/profiler/bottleneck_analyzer.obj: src/profiler/bottleneck_analyzer.cpp.obj
+.PHONY : src/profiler/bottleneck_analyzer.obj
 
 # target to build an object file
-src/virtual_memory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/virtual_memory.cpp.obj
-.PHONY : src/virtual_memory.cpp.obj
+src/profiler/bottleneck_analyzer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.obj
+.PHONY : src/profiler/bottleneck_analyzer.cpp.obj
 
-src/virtual_memory.i: src/virtual_memory.cpp.i
-.PHONY : src/virtual_memory.i
+src/profiler/bottleneck_analyzer.i: src/profiler/bottleneck_analyzer.cpp.i
+.PHONY : src/profiler/bottleneck_analyzer.i
 
 # target to preprocess a source file
-src/virtual_memory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/virtual_memory.cpp.i
-.PHONY : src/virtual_memory.cpp.i
+src/profiler/bottleneck_analyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.i
+.PHONY : src/profiler/bottleneck_analyzer.cpp.i
 
-src/virtual_memory.s: src/virtual_memory.cpp.s
-.PHONY : src/virtual_memory.s
+src/profiler/bottleneck_analyzer.s: src/profiler/bottleneck_analyzer.cpp.s
+.PHONY : src/profiler/bottleneck_analyzer.s
 
 # target to generate assembly for a file
-src/virtual_memory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/virtual_memory.cpp.s
-.PHONY : src/virtual_memory.cpp.s
+src/profiler/bottleneck_analyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/profiler/bottleneck_analyzer.cpp.s
+.PHONY : src/profiler/bottleneck_analyzer.cpp.s
+
+src/simulator/simulation_engine.obj: src/simulator/simulation_engine.cpp.obj
+.PHONY : src/simulator/simulation_engine.obj
+
+# target to build an object file
+src/simulator/simulation_engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.obj
+.PHONY : src/simulator/simulation_engine.cpp.obj
+
+src/simulator/simulation_engine.i: src/simulator/simulation_engine.cpp.i
+.PHONY : src/simulator/simulation_engine.i
+
+# target to preprocess a source file
+src/simulator/simulation_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.i
+.PHONY : src/simulator/simulation_engine.cpp.i
+
+src/simulator/simulation_engine.s: src/simulator/simulation_engine.cpp.s
+.PHONY : src/simulator/simulation_engine.s
+
+# target to generate assembly for a file
+src/simulator/simulation_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/simulator/simulation_engine.cpp.s
+.PHONY : src/simulator/simulation_engine.cpp.s
+
+src/simulator/simulation_result.obj: src/simulator/simulation_result.cpp.obj
+.PHONY : src/simulator/simulation_result.obj
+
+# target to build an object file
+src/simulator/simulation_result.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.obj
+.PHONY : src/simulator/simulation_result.cpp.obj
+
+src/simulator/simulation_result.i: src/simulator/simulation_result.cpp.i
+.PHONY : src/simulator/simulation_result.i
+
+# target to preprocess a source file
+src/simulator/simulation_result.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.i
+.PHONY : src/simulator/simulation_result.cpp.i
+
+src/simulator/simulation_result.s: src/simulator/simulation_result.cpp.s
+.PHONY : src/simulator/simulation_result.s
+
+# target to generate assembly for a file
+src/simulator/simulation_result.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/simulator/simulation_result.cpp.s
+.PHONY : src/simulator/simulation_result.cpp.s
+
+src/utils/config_file.obj: src/utils/config_file.cpp.obj
+.PHONY : src/utils/config_file.obj
+
+# target to build an object file
+src/utils/config_file.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/utils/config_file.cpp.obj
+.PHONY : src/utils/config_file.cpp.obj
+
+src/utils/config_file.i: src/utils/config_file.cpp.i
+.PHONY : src/utils/config_file.i
+
+# target to preprocess a source file
+src/utils/config_file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/utils/config_file.cpp.i
+.PHONY : src/utils/config_file.cpp.i
+
+src/utils/config_file.s: src/utils/config_file.cpp.s
+.PHONY : src/utils/config_file.s
+
+# target to generate assembly for a file
+src/utils/config_file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/utils/config_file.cpp.s
+.PHONY : src/utils/config_file.cpp.s
+
+src/utils/virtual_memory.obj: src/utils/virtual_memory.cpp.obj
+.PHONY : src/utils/virtual_memory.obj
+
+# target to build an object file
+src/utils/virtual_memory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.obj
+.PHONY : src/utils/virtual_memory.cpp.obj
+
+src/utils/virtual_memory.i: src/utils/virtual_memory.cpp.i
+.PHONY : src/utils/virtual_memory.i
+
+# target to preprocess a source file
+src/utils/virtual_memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.i
+.PHONY : src/utils/virtual_memory.cpp.i
+
+src/utils/virtual_memory.s: src/utils/virtual_memory.cpp.s
+.PHONY : src/utils/virtual_memory.s
+
+# target to generate assembly for a file
+src/utils/virtual_memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/utils/virtual_memory.cpp.s
+.PHONY : src/utils/virtual_memory.cpp.s
+
+src/workload/workload_spec.obj: src/workload/workload_spec.cpp.obj
+.PHONY : src/workload/workload_spec.obj
+
+# target to build an object file
+src/workload/workload_spec.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/workload/workload_spec.cpp.obj
+.PHONY : src/workload/workload_spec.cpp.obj
+
+src/workload/workload_spec.i: src/workload/workload_spec.cpp.i
+.PHONY : src/workload/workload_spec.i
+
+# target to preprocess a source file
+src/workload/workload_spec.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/workload/workload_spec.cpp.i
+.PHONY : src/workload/workload_spec.cpp.i
+
+src/workload/workload_spec.s: src/workload/workload_spec.cpp.s
+.PHONY : src/workload/workload_spec.s
+
+# target to generate assembly for a file
+src/workload/workload_spec.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/workload/workload_spec.cpp.s
+.PHONY : src/workload/workload_spec.cpp.s
 
 # Help Target
 help:
@@ -233,18 +401,39 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... happ
-	@echo ... src/hardware_profile.obj
-	@echo ... src/hardware_profile.i
-	@echo ... src/hardware_profile.s
-	@echo ... src/hardware_profiles.obj
-	@echo ... src/hardware_profiles.i
-	@echo ... src/hardware_profiles.s
+	@echo ... src/cli/cli_parser.obj
+	@echo ... src/cli/cli_parser.i
+	@echo ... src/cli/cli_parser.s
+	@echo ... src/cli/cli_runner.obj
+	@echo ... src/cli/cli_runner.i
+	@echo ... src/cli/cli_runner.s
+	@echo ... src/hardware/hardware_config.obj
+	@echo ... src/hardware/hardware_config.i
+	@echo ... src/hardware/hardware_config.s
+	@echo ... src/hardware/storage_type.obj
+	@echo ... src/hardware/storage_type.i
+	@echo ... src/hardware/storage_type.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/virtual_memory.obj
-	@echo ... src/virtual_memory.i
-	@echo ... src/virtual_memory.s
+	@echo ... src/profiler/bottleneck_analyzer.obj
+	@echo ... src/profiler/bottleneck_analyzer.i
+	@echo ... src/profiler/bottleneck_analyzer.s
+	@echo ... src/simulator/simulation_engine.obj
+	@echo ... src/simulator/simulation_engine.i
+	@echo ... src/simulator/simulation_engine.s
+	@echo ... src/simulator/simulation_result.obj
+	@echo ... src/simulator/simulation_result.i
+	@echo ... src/simulator/simulation_result.s
+	@echo ... src/utils/config_file.obj
+	@echo ... src/utils/config_file.i
+	@echo ... src/utils/config_file.s
+	@echo ... src/utils/virtual_memory.obj
+	@echo ... src/utils/virtual_memory.i
+	@echo ... src/utils/virtual_memory.s
+	@echo ... src/workload/workload_spec.obj
+	@echo ... src/workload/workload_spec.i
+	@echo ... src/workload/workload_spec.s
 .PHONY : help
 
 

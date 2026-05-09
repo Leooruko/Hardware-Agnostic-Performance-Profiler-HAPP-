@@ -5,4 +5,16 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(include)
 
-add_executable(happ src/main.cpp src/hardware_profile.cpp src/hardware_profiles.cpp)
+add_executable(happ
+    src/main.cpp
+    src/hardware/storage_type.cpp
+    src/hardware/hardware_config.cpp
+    src/workload/workload_spec.cpp
+    src/simulator/simulation_engine.cpp
+    src/simulator/simulation_result.cpp
+    src/profiler/bottleneck_analyzer.cpp
+    src/cli/cli_parser.cpp
+    src/cli/cli_runner.cpp
+    src/utils/config_file.cpp
+    src/utils/virtual_memory.cpp
+)
