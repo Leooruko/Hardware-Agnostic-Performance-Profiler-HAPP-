@@ -1,0 +1,256 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 2494 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+(HAPP SOLUTION DOCUMENTATION) Tj
+T* () Tj
+T* (Project: Hardware-Agnostic Performance Profiler \(HAPP\)) Tj
+T* (Audience: Lecturer presentation) Tj
+T* (Repository: Hardware-Agnostic-Performance-Profiler-HAPP-) Tj
+T* () Tj
+T* (1. EXECUTIVE SUMMARY) Tj
+T* () Tj
+T* (HAPP is a C++17 command-line simulator that estimates application performance under constrained) Tj
+T* (hardware profiles. Instead of emulating CPU instructions, it applies a practical analytical) Tj
+T* (model across compute, storage I/O, network throughput, and memory pressure so developers can) Tj
+T* (compare scenarios quickly.) Tj
+T* () Tj
+T* (2. PROBLEM CONTEXT) Tj
+T* () Tj
+T* (Embedded and IoT software often fails when moved from high-performance development machines to) Tj
+T* (lower-resource targets. Typical gaps include:) Tj
+T* (• Underestimated memory needs) Tj
+T* (• Hidden compute bottlenecks) Tj
+T* (• Storage-induced slowdowns) Tj
+T* (• Network sensitivity for transfer-heavy tasks) Tj
+T* () Tj
+T* (HAPP addresses these by simulating “what-if” hardware environments using configurable) Tj
+T* (parameters \(CPU cores, RAM, storage class, network Mbps\).) Tj
+T* () Tj
+T* (3. PROJECT GOALS) Tj
+T* () Tj
+T* (• Provide a lightweight hardware-constrained performance estimation tool.) Tj
+T* (• Make bottleneck causes explicit \(CPU, RAM, storage, network\).) Tj
+T* (• Support repeatable CLI workflows for simulation, comparison, and config persistence.) Tj
+T* (• Remain extensible for future telemetry and deeper resource modeling.) Tj
+T* () Tj
+T* (4. ARCHITECTURE OVERVIEW) Tj
+T* () Tj
+T* (HAPP is organized into focused modules:) Tj
+T* () Tj
+T* (• CLI layer \(cli_parser, cli_runner\): command parsing, option validation, and user-facing) Tj
+T* (reporting.) Tj
+T* (• Hardware model \(hardware_config, storage_type\): machine profile representation and storage) Tj
+T* (classification.) Tj
+T* (• Workload model \(workload_spec\): task type, complexity, and size controls.) Tj
+T* (• Simulation engine \(simulation_engine\): core estimation model for time and resource usage.) Tj
+T* (• Profiler analysis \(bottleneck_analyzer\): bottleneck detection, warnings, and recommendations.) Tj
+T* (• Result reporting \(simulation_result\): normalized output object and printable report.) Tj
+T* (• Utilities \(config_file, virtual_memory\): config persistence and educational fixed-capacity) Tj
+T* (allocator.) Tj
+T* () Tj
+T* (5. IMPLEMENTATION DETAILS) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Length 1886 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+() Tj
+T* (5.1 COMMAND INTERFACE) Tj
+T* () Tj
+T* (Supported commands:) Tj
+T* (• simulate: run one profile + workload scenario.) Tj
+T* (• compare: run multiple hardware profiles against the same workload \(requires at least two --hw) Tj
+T* (entries\).) Tj
+T* (• save: write current hardware/workload setup to key=value file.) Tj
+T* (• help: usage guidance.) Tj
+T* () Tj
+T* (Input style supports both --flag value and --flag=value.) Tj
+T* () Tj
+T* (5.2 HARDWARE CONFIGURATION MODEL) Tj
+T* () Tj
+T* (HardwareConfig includes:) Tj
+T* (• cpu_cores \(int\)) Tj
+T* (• ram_gb \(double\)) Tj
+T* (• storage \(HDD | SSD | NVMe\)) Tj
+T* (• network_mbps \(double\)) Tj
+T* (• optional label) Tj
+T* () Tj
+T* (Default baseline is 4 cores, 8 GiB RAM, SSD, 100 Mb/s.) Tj
+T* () Tj
+T* (5.3 WORKLOAD MODEL) Tj
+T* () Tj
+T* (WorkloadSpec includes:) Tj
+T* (• task_type \(e.g., rendering, compiling, database, streaming, generic\)) Tj
+T* (• complexity \(Low, Medium, High\)) Tj
+T* (• task_size \(double scalar\)) Tj
+T* () Tj
+T* (Each task maps to heuristic weights \(cpu, mem_per_size, io, net\) for simulation.) Tj
+T* () Tj
+T* (5.4 SIMULATION ALGORITHM) Tj
+T* () Tj
+T* (The simulation computes three core time components:) Tj
+T* (1. Compute component: inversely scaled by cores^0.72 \(sub-linear parallelism\).) Tj
+T* (2. I/O component: scaled by storage latency factor \(HDD slower, NVMe faster\).) Tj
+T* (3. Network component: scaled against a 500 Mb/s reference.) Tj
+T* () Tj
+T* (Total execution estimate combines dominant and average effects:) Tj
+T* () Tj
+T* (execution_time = 0.65 * dominant_component + 0.35 * average\(component_sum\)) Tj
+T* () Tj
+T* (Memory pressure penalty is applied when modeled memory requirement exceeds configured RAM.) Tj
+T* () Tj
+T* (5.5 BOTTLENECK ANALYSIS LOGIC) Tj
+T* () Tj
+T* (After simulation, the profiler:) Tj
+ET
+endstream
+endobj
+4 0 obj
+<< /Length 1578 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+(• labels primary bottleneck \(RAM, CPU, Storage I/O, Network\),) Tj
+T* (• emits warnings for risky conditions \(e.g., low RAM, HDD with I/O-heavy task\),) Tj
+T* (• provides targeted recommendations.) Tj
+T* () Tj
+T* (Recommendations are deduplicated while preserving insertion order.) Tj
+T* () Tj
+T* (5.6 CONFIGURATION PERSISTENCE) Tj
+T* () Tj
+T* (load_happ_config and save_happ_config support key=value profiles. Config files can be layered) Tj
+T* (via --config and overridden by later CLI flags.) Tj
+T* () Tj
+T* (5.7 VIRTUAL MEMORY UTILITY) Tj
+T* () Tj
+T* (VirtualMemory demonstrates fixed-capacity allocation using a bump-pointer model. It currently) Tj
+T* (serves as a simple educational mechanism and extension point for future memory pressure) Tj
+T* (integration.) Tj
+T* () Tj
+T* (6. BUILD AND EXECUTION WORKFLOW) Tj
+T* () Tj
+T* (BUILD) Tj
+T* () Tj
+T* (bash) Tj
+T* (mkdir build) Tj
+T* (cd build) Tj
+T* (cmake ..) Tj
+T* (make) Tj
+T* () Tj
+T* () Tj
+T* (EXAMPLE RUN) Tj
+T* () Tj
+T* (bash) Tj
+T* (./happ simulate --cpu 4 --ram 8 --storage ssd --task rendering --complexity high --size 2) Tj
+T* () Tj
+T* () Tj
+T* (EXAMPLE COMPARE) Tj
+T* () Tj
+T* (bash) Tj
+T* (./happ compare \\) Tj
+T* (  --hw cpu=2,ram=4,storage=hdd,network=50,label=EdgeA \\) Tj
+T* (  --hw cpu=8,ram=16,storage=nvme,network=500,label=EdgeB \\) Tj
+T* (  --task database --complexity high --size 2) Tj
+T* () Tj
+T* () Tj
+T* (7. CURRENT STATUS VS ROADMAP) Tj
+T* () Tj
+T* (Implemented:) Tj
+T* (• Core CLI command handling) Tj
+T* (• Analytical simulation engine) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Length 1596 >>
+stream
+BT
+/F1 11 Tf
+1 0 0 1 54 738 Tm
+14 TL
+(• Bottleneck classifier and recommendation output) Tj
+T* (• Config file load/save) Tj
+T* () Tj
+T* (Planned / partial:) Tj
+T* (• Richer virtual memory integration) Tj
+T* (• CPU throttling controller) Tj
+T* (• Scheduler-like execution behavior) Tj
+T* (• Time-series telemetry and visualization) Tj
+T* () Tj
+T* (8. DESIGN TRADEOFFS) Tj
+T* () Tj
+T* (• Chosen approach: analytical, explainable, fast simulation.) Tj
+T* (• Not targeted: instruction-level CPU emulation or OS-accurate scheduling.) Tj
+T* (• Benefit: easier iteration, suitable for teaching, comparison, and early-stage capacity) Tj
+T* (planning.) Tj
+T* (• Limit: estimates are heuristic and should be validated against real hardware benchmarks.) Tj
+T* () Tj
+T* (9. TESTING AND VALIDATION STRATEGY) Tj
+T* () Tj
+T* (Suggested academic validation steps:) Tj
+T* (1. Define representative workloads by domain \(render, compile, DB, stream\).) Tj
+T* (2. Execute identical scenarios across real hardware and HAPP profiles.) Tj
+T* (3. Compare trend consistency \(ranking/order\) rather than exact absolute timing.) Tj
+T* (4. Calibrate constants \(kSecondsPerUnit, scaling factors\) to improve realism.) Tj
+T* () Tj
+T* (10. CONCLUSION) Tj
+T* () Tj
+T* (HAPP demonstrates a practical and extensible method for profiling resource sensitivity without) Tj
+T* (requiring all target devices physically present. The current implementation is suitable as a) Tj
+T* (foundational MVP for coursework, with clear pathways to stronger fidelity and visualization in) Tj
+T* (subsequent iterations.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Pages /Kids [ 7 0 R 8 0 R 9 0 R 10 0 R ] /Count 4 >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 3 0 R >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+10 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R >> >> /Contents 5 0 R >>
+endobj
+11 0 obj
+<< /Type /Catalog /Pages 6 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000002625 00000 n 
+0000004563 00000 n 
+0000006193 00000 n 
+0000007841 00000 n 
+0000007919 00000 n 
+0000008045 00000 n 
+0000008171 00000 n 
+0000008297 00000 n 
+0000008424 00000 n 
+trailer
+<< /Size 12 /Root 11 0 R >>
+startxref
+8474
+%%EOF
