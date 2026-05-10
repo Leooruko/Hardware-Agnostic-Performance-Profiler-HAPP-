@@ -15,6 +15,9 @@ struct CliOptions {
     HardwareConfig hardware;
     WorkloadSpec workload;
 
+    // `happ simulate --session`: start an OS-enforced shell instead of only printing estimates.
+    bool simulate_constrained_session = false;
+
     std::string save_path;
 
     // One entry per `--hw ...` for the compare command.

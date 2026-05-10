@@ -91,7 +91,7 @@ void analyze_bottlenecks(const HardwareConfig& hw, const WorkloadSpec& workload,
     if (hw.cpu_cores < 2 &&
         (task_lower == "rendering" || task_lower == "render" || task_lower == "compiling" ||
          task_lower == "compile" || task_lower == "build")) {
-        r.warnings.push_back("Only one CPU core — parallel stages will queue.");
+        r.warnings.push_back("Only one CPU core - parallel stages will queue.");
     }
 
     if (hw.storage == StorageType::HDD && w.io > 0.8) {

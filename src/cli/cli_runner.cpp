@@ -1,6 +1,7 @@
 #include "cli/cli_runner.h"
 
 #include "cli/cli_parser.h"
+#include "cli/constrained_session.h"
 #include "hardware/hardware_config.h"
 #include "hardware/storage_type.h"
 #include "simulator/simulation_engine.h"
@@ -17,7 +18,7 @@ namespace {
 
 void print_help() {
     std::cout << R"(
-HAPP — Hardware-Agnostic Performance Profiler (MVP)
+HAPP - Hardware-Agnostic Performance Profiler (MVP)
 
 Commands:
   happ simulate [options]      Estimate metrics for one machine definition.
@@ -36,12 +37,20 @@ Common options (simulate / compare / save):
   --size <number>     Workload size scalar (default 1.0)
   --config <file>     Load key=value pairs when seen; later flags override
 
+Simulate-only:
+  --session           After the analytic report, open an interactive shell in this console
+                      with OS-enforced RAM and CPU caps (Windows). Run any commands inside;
+                      type EXIT to return. Storage/network flags are not injected into the OS.
+
 Compare-only:
   --hw cpu=4,ram=8,storage=ssd,network=100[,label=Home PC]
       Repeat --hw for each configuration (at least two).
 
 Example:
   happ simulate --cpu 4 --ram 8 --storage ssd --task rendering --complexity high --size 2
+
+Constrained interactive shell (Windows):
+  happ simulate --cpu 2 --ram 4 --session
 )";
 }
 
@@ -123,6 +132,27 @@ int run_happ_cli(int argc, char** argv) {
         print_workload_banner(opt.workload);
         SimulationResult r = simulate(opt.hardware, opt.workload);
         print_simulation_report(r);
+
+        if (opt.simulate_constrained_session) {
+            if (!constrained_session_available()) {
+                std::cerr << "Error: --session is not available on this platform.\n";
+                return 1;
+            }
+            std::cout << "\n--- Interactive constrained session ---\n";
+            std::cout << constrained_session_limitations_note() << "\n";
+            std::cout << "When the prompt appears, run your program like usual (e.g. "
+                         "path\\to\\app.exe or python script.py). That process stays inside the "
+                         "same Windows job, so RAM and CPU caps apply to it and its children. "
+                         "Type EXIT to close the shell.\n\n";
+            std::string err;
+            const int shell_rc = run_constrained_interactive_session(opt.hardware, err);
+            if (shell_rc < 0) {
+                std::cerr << "Error: " << err << "\n";
+                return 1;
+            }
+            return shell_rc;
+        }
+
         return 0;
     }
 

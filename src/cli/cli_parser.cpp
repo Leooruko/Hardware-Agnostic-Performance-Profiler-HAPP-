@@ -147,6 +147,12 @@ bool parse_cli(int argc, char** argv, CliOptions& out) {
         const std::string name = flag_name(arg);
         std::string val;
 
+        if (name == "session") {
+            out.simulate_constrained_session = true;
+            ++i;
+            continue;
+        }
+
         if (name == "config") {
             if (!take_value(i, argc, argv, arg, val, out.error)) {
                 return false;

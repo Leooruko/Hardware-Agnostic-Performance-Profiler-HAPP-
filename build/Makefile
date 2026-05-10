@@ -176,6 +176,30 @@ src/cli/cli_runner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/cli_runner.cpp.s
 .PHONY : src/cli/cli_runner.cpp.s
 
+src/cli/constrained_session.obj: src/cli/constrained_session.cpp.obj
+.PHONY : src/cli/constrained_session.obj
+
+# target to build an object file
+src/cli/constrained_session.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/constrained_session.cpp.obj
+.PHONY : src/cli/constrained_session.cpp.obj
+
+src/cli/constrained_session.i: src/cli/constrained_session.cpp.i
+.PHONY : src/cli/constrained_session.i
+
+# target to preprocess a source file
+src/cli/constrained_session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/constrained_session.cpp.i
+.PHONY : src/cli/constrained_session.cpp.i
+
+src/cli/constrained_session.s: src/cli/constrained_session.cpp.s
+.PHONY : src/cli/constrained_session.s
+
+# target to generate assembly for a file
+src/cli/constrained_session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\happ.dir\build.make CMakeFiles/happ.dir/src/cli/constrained_session.cpp.s
+.PHONY : src/cli/constrained_session.cpp.s
+
 src/hardware/hardware_config.obj: src/hardware/hardware_config.cpp.obj
 .PHONY : src/hardware/hardware_config.obj
 
@@ -407,6 +431,9 @@ help:
 	@echo ... src/cli/cli_runner.obj
 	@echo ... src/cli/cli_runner.i
 	@echo ... src/cli/cli_runner.s
+	@echo ... src/cli/constrained_session.obj
+	@echo ... src/cli/constrained_session.i
+	@echo ... src/cli/constrained_session.s
 	@echo ... src/hardware/hardware_config.obj
 	@echo ... src/hardware/hardware_config.i
 	@echo ... src/hardware/hardware_config.s

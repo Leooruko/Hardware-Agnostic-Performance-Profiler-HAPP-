@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/happ.dir/src/cli/cli_parser.cpp.obj.d"
   "CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj"
   "CMakeFiles/happ.dir/src/cli/cli_runner.cpp.obj.d"
+  "CMakeFiles/happ.dir/src/cli/constrained_session.cpp.obj"
+  "CMakeFiles/happ.dir/src/cli/constrained_session.cpp.obj.d"
   "CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj"
   "CMakeFiles/happ.dir/src/hardware/hardware_config.cpp.obj.d"
   "CMakeFiles/happ.dir/src/hardware/storage_type.cpp.obj"
